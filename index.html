@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></link>
+    <!-- Icons made by https://www.freepik.com from https://www.flaticon.com/" -->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
+  </head>
+  <body>
+    <header>
+      <div class="inner-header-container">
+        <h1 class="location"></h1>
+        <p class="header-date"></p>
+        <label class="toggle" for="myToggle">
+          <input type="checkbox" class="toggle-input" id="myToggle" />
+          <div class="toggle-fill">
+            <span>F</span>
+            <span>C</span>
+          </div>
+        </label>
+      </div>
+      <div class="search-bar-container">
+        <input
+          type="search"
+          class="search-bar"
+          aria-label="Search weather data for given location"
+          placeholder="London, GB"
+          autocomplete="off"
+        />
+        <button class="search-btn"><i class="fas fa-search fa-lg"></i></button>
+        <div class="search-options"></div>
+        <div class="error">
+          <p>Put city's name, comma, 2-letter country code</p>
+        </div>
+      </div>
+    </header>
+    <section class="current-weather">
+      <div class="current-left-weather-details">
+        <img
+          src=""
+          id="current-weather-icon"
+        />
+        <div>
+          <p class="current-temperature temp"></p>
+          <p class="current-weather-description"</p>
+        </div>
+      </div>
+      <div class="spinner"></div>
+      <div class="current-right-weather-details">
+        <div class="current-high-temp-container">
+          <p class="current-high-temperature current-top-details temp"></p>
+          <p class="current-bottom-details">High</p>
+        </div>
+        <div class="current-wind-speed-container">
+          <p class="current-wind-speed current-top-details"></p>
+          <p class="current-bottom-details">Wind</p>
+        </div>
+        <div class="current-sunrise-container">
+          <p class="current-sunrise-time current-top-details"></p>
+          <p class="current-bottom-details">Sunrise</p>
+        </div>
+        <div class="current-low-temp-container">
+          <p class="current-low-temperature current-top-details temp"></p>
+          <p class="current-bottom-details">Low</p>
+        </div>
+        <div class="current-humidity-percentage-container">
+          <p class="current-humidity-percentage current-top-details"></p>
+          <p class="current-bottom-details">Humidity</p>
+        </div>
+        <div class="current-sunrise-container">
+          <p class="current-sunset-time current-top-details"></p>
+          <p class="current-bottom-details">Sunset</p>
+        </div>
+      </div>
+    </section>
+    <section class="todays-weather">
+      <h2>Todays weather</h2>
+      <div class="hourly-weather-container"></div>
+    </section>
+    <section class="daily-forecast">
+      <h2>8-day forecast</h2>
+      <div class="daily-weather-container"></div>
+    </section>
+  </body>
+
+  <script src="./scripts/index.js" type="module"></script>
+</html>
