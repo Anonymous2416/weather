@@ -2,6 +2,7 @@
 
 - Vanilla Javascript
 - Fetching from [Open Weather Map](https://openweathermap.org/) api
+- Responsive
 
 # View in Browser
 
